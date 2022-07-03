@@ -17,7 +17,7 @@ final class lc13_RomanToIntegerTest extends TestCase
             1994 => 'MCMXCIV'
         ];
 
-        $solution = new lc13_Solution();
+        $solution = new lc13_RomanToInteger();
         foreach ($testCases as $sum => $roman) {
             $result = $solution->romanToInt($roman);
             $this->assertEquals($sum, $result);

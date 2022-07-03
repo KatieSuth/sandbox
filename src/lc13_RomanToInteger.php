@@ -1,6 +1,6 @@
 <?php
 
-class lc13_Solution
+class lc13_RomanToInteger
 {
     
     public $roman;   //array of roman numerals
