@@ -1,3 +1,5 @@
+![Tests](https://github.com/KatieSuth/sandbox/actions/workflows/main.yml/badge.svg)
+
 # sandbox
 A simple coding sandbox with solutions for various problems and associated tests.
 
