@@ -8,6 +8,13 @@ on:
     branches: [ main ]
 
 jobs:
+  phplint:
+    runs-on: ubuntu-latest
+
+    steps:
+        - uses: actions/checkout@v3
+        - uses: michaelw90/PHP-Lint@master
+        
   unit-tests:
     runs-on: ubuntu-latest
 
