@@ -43,7 +43,7 @@ final class lc01_TwoSumTest extends TestCase
 
     public function testTwoSum_Bad()
     {
-        $testCases = $this->getTestCases();
+        $testCases = $this->getTestCases()
 
         $solution = new lc01_TwoSum();
         foreach ($testCases as $case) {
