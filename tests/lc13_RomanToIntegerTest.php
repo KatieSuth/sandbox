@@ -20,7 +20,7 @@ final class lc13_RomanToIntegerTest extends TestCase
         $solution = new lc13_RomanToInteger();
         foreach ($testCases as $sum => $roman) {
             $result = $solution->romanToInt($roman);
-            $this->assertNotEquals($sum, $result);
+            $this->assertEquals($sum, $result);
         }
     }
 }
