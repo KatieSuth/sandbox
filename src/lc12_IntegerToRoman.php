@@ -1,7 +1,7 @@
 <?php
 
-class lc12_IntegerToRoman {
-
+class lc12_IntegerToRoman
+{
     public $map = [  //value map
         'M'  => 1000,
         'CM' => 900,
@@ -26,7 +26,8 @@ class lc12_IntegerToRoman {
      *  least and subtracts from $num until $num == 0 to determine the 
      *  correct Roman numeral value for $num
      */
-    function intToRoman($num) {
+    function intToRoman($num)
+    {
         $roman = '';
         
         foreach ($this->map as $numeral => $value) {
