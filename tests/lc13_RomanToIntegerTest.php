@@ -3,9 +3,9 @@ use PHPUnit\Framework\TestCase;
 
 final class lc13_RomanToIntegerTest extends TestCase
 {
-    public function testRomanToInt()
+    private function getTestCases()
     {
-        $testCases = [
+        return ([
             1 => 'I',
             3 => 'III',
             4 => 'IV',
@@ -15,7 +15,12 @@ final class lc13_RomanToIntegerTest extends TestCase
             898 => 'DCCCXCVIII',
             999 => 'CMXCIX',
             1994 => 'MCMXCIV'
-        ];
+        ]);
+    }
+
+    public function testRomanToInt()
+    {
+        $testCases = $this->getTestCases();
 
         $solution = new lc13_RomanToInteger();
         foreach ($testCases as $sum => $roman) {

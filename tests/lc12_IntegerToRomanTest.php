@@ -3,9 +3,9 @@ use PHPUnit\Framework\TestCase;
 
 final class lc12_IntegerToRomanTest extends TestCase
 {
-    public function testIntToRoman()
+    private function getTestCases()
     {
-        $testCases = [
+        return ([
             'I'            => 1,
             'III'          => 3,
             'IV'           => 4,
@@ -15,7 +15,12 @@ final class lc12_IntegerToRomanTest extends TestCase
             'CMXCIX'       => 999,
             'M'            => 1000,
             'MCMXCIV'      => 1994
-        ];
+        ]);
+    }
+
+    public function testIntToRoman()
+    {
+        $testCases = $this->getTestCases();
 
         $solution = new lc12_IntegerToRoman();
         foreach ($testCases as $roman => $num) {
